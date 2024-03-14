@@ -1,0 +1,27 @@
+{
+  "name": "@hayabusa/pandacss",
+  "version": "0.1.0",
+  "repository": "https://github.com/dino3616/hayabusa.git",
+  "license": "MIT",
+  "private": true,
+  "main": "./src/index.ts",
+  "scripts": {
+    "debug": "panda debug -c ./debug/panda.config.ts",
+    "fmt": "biome format .",
+    "fmt:fix": "biome format --write",
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --apply",
+    "test": "bun test",
+    "studio": "panda studio"
+  },
+  "dependencies": {
+    "@hayabusa/design-token": "workspace:*",
+    "zod": "3.22.4"
+  },
+  "devDependencies": {
+    "@hayabusa/tsconfig": "workspace:*",
+    "@hayabusa/type": "workspace:*",
+    "@pandacss/dev": "0.34.3",
+    "@pandacss/studio": "0.34.3"
+  }
+}
