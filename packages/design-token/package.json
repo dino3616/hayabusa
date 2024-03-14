@@ -1,0 +1,18 @@
+{
+  "name": "@hayabusa/design-token",
+  "version": "0.1.0",
+  "repository": "https://github.com/dino3616/hayabusa.git",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "fmt": "biome format .",
+    "fmt:fix": "biome format --write",
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --apply",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@hayabusa/tsconfig": "workspace:*",
+    "@hayabusa/type": "workspace:*"
+  }
+}
