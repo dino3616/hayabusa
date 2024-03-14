@@ -1,0 +1,22 @@
+{
+  "name": "hayabusa",
+  "workspaceFolder": "/workspaces/hayabusa/",
+  "dockerComposeFile": ["../docker/docker-compose.development.yaml"],
+  "service": "app",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "adam-bender.commit-message-editor",
+        "biomejs.biome",
+        "chakra-ui.panda-css-vscode",
+        "editorconfig.editorconfig",
+        "graphql.vscode-graphql",
+        "oven.bun-vscode",
+        "renesaarsoo.sql-formatter-vsc"
+      ]
+    }
+  }
+}
