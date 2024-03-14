@@ -24,7 +24,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@chromatic-com/storybook": "1.2.19",
+    "@chromatic-com/storybook": "1.2.20",
     "@hayabusa/pandacss": "workspace:*",
     "@hayabusa/postcss": "workspace:*",
     "@hayabusa/tsconfig": "workspace:*",
@@ -37,7 +37,7 @@
     "@storybook/addons": "7.6.17",
     "@storybook/nextjs": "8.0.0",
     "@storybook/react": "8.0.0",
-    "@types/react": "18.2.65",
+    "@types/react": "18.2.66",
     "@types/react-dom": "18.2.22",
     "chromatic": "11.0.8",
     "storybook": "8.0.0"
