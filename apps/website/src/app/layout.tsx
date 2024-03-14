@@ -3,6 +3,7 @@ import { getBaseUrl } from '@hayabusa/core/util/get-base-url';
 import { colors } from '@hayabusa/design-token';
 import { css } from '@hayabusa/style/css';
 import { ThemeProvider } from '@hayabusa/ui/component/theme-provider';
+import { Analytics } from '@vercel/analytics/react';
 import type { Metadata, NextPage, Viewport } from 'next';
 import type { ReactNode } from 'react';
 import { UrqlProvider } from '#website/infra/urql/ssr';
@@ -23,6 +24,7 @@ const RootLayout: NextPage<RootLayoutProps> = async ({ children }) => (
         fontFamily: 'sans',
       })}
     >
+      <Analytics />
       <div
         aria-hidden
         className={css({

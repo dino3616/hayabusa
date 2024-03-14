@@ -27,6 +27,7 @@
     "@hayabusa/urql": "workspace:*",
     "@supabase/ssr": "0.1.0",
     "@urql/next": "1.1.1",
+    "@vercel/analytics": "1.2.2",
     "framer-motion": "11.0.13",
     "graphql-tag": "2.12.6",
     "next": "14.1.3",
