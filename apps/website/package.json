@@ -44,7 +44,7 @@
     "@hayabusa/tsconfig": "workspace:*",
     "@hayabusa/type": "workspace:*",
     "@storybook/react": "8.0.0",
-    "@types/react": "18.2.65",
+    "@types/react": "18.2.66",
     "@types/react-dom": "18.2.22"
   }
 }
