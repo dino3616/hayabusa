@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "website": {
+      "schema": ["./packages/api-schema/generated/schema.gql"],
+      "documents": ["./apps/website/src/infra/graphql/document/**/*.gql"]
+    }
+  }
+}
