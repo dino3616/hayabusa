@@ -28,7 +28,7 @@ jobs:
           ref: ${{ github.event.workflow_run.head_sha }}
 
       - name: check for file changes
-        uses: dorny/paths-filter@v2
+        uses: dorny/paths-filter@v3
         id: changes
         with:
           token: ${{ github.token }}
