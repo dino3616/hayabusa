@@ -1,0 +1,18 @@
+services:
+  app:
+    container_name: hayabusa-app
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile.development
+    volumes:
+      - type: bind
+        source: ../
+        target: /workspaces/hayabusa/
+      - type: volume
+        source: bun-cache
+        target: /usr/.bun/install/cache/
+    tty: true
+
+volumes:
+  bun-cache:
+    driver: local
