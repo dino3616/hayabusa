@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@hayabusa/tsconfig/tsconfig.node.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/",
+    "paths": {
+      "#api/*": ["./src/*"],
+      "~api/*": ["./*"]
+    },
+    "plugins": [
+      {
+        "transform": "typia/lib/transform"
+      },
+      {
+        "transform": "@nestia/core/lib/transform",
+        "validate": "assert",
+        "stringify": "assert"
+      }
+    ]
+  },
+  "include": ["./**/*", "./*.*ts"],
+  "exclude": ["**/dist/**/*", "**/node_modules/**/*", "./*.*js"]
+}

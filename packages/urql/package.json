@@ -1,0 +1,27 @@
+{
+  "name": "@hayabusa/urql",
+  "version": "0.1.0",
+  "repository": "https://github.com/dino3616/hayabusa.git",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "fmt": "biome format .",
+    "fmt:fix": "biome format --write",
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --apply",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@urql/core": "4.3.0",
+    "@urql/devtools": "2.0.3",
+    "@urql/exchange-auth": "2.1.6",
+    "@urql/next": "1.1.1",
+    "date-fns": "3.4.0",
+    "graphql": "16.8.1",
+    "graphql-ws": "5.15.0"
+  },
+  "devDependencies": {
+    "@hayabusa/tsconfig": "workspace:*",
+    "@hayabusa/type": "workspace:*"
+  }
+}

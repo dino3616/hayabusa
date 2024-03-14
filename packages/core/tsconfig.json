@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@hayabusa/tsconfig/tsconfig.bun.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "rootDir": "./"
+  },
+  "include": ["./*.*js", "./*.*ts", "./**/*.*ts", "./**/*.*tsx"],
+  "exclude": ["**/node_modules/**/*"]
+}
