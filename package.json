@@ -1,0 +1,40 @@
+{
+  "name": "hayabusa",
+  "version": "0.1.0",
+  "repository": "https://github.com/dino3616/hayabusa.git",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "prepare": "lefthook install",
+    "api": "bun --cwd ./apps/api",
+    "catalog": "bun --cwd ./apps/catalog",
+    "website": "bun --cwd ./apps/website",
+    "api-schema": "bun --cwd ./packages/api-schema",
+    "core": "bun --cwd ./packages/core",
+    "design-token": "bun --cwd ./packages/design-token",
+    "graphql-codegen": "bun --cwd ./packages/graphql-codegen",
+    "pandacss": "bun --cwd ./packages/pandacss",
+    "postcss": "bun --cwd ./packages/postcss",
+    "tsconfig": "bun --cwd ./packages/tsconfig",
+    "type": "bun --cwd ./packages/type",
+    "ui": "bun --cwd ./packages/ui",
+    "urql": "bun --cwd ./packages/urql"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.6.1",
+    "@types/bun": "1.0.8",
+    "cross-env": "7.0.3",
+    "dotenv-cli": "7.4.1",
+    "lefthook": "1.6.6",
+    "rimraf": "5.0.5",
+    "supabase": "1.148.6",
+    "ts-node": "10.9.2",
+    "ts-patch": "3.1.2",
+    "turbo": "1.12.5",
+    "typescript": "5.4.2"
+  },
+  "overrides": {
+    "@langchain/core": "0.1.46"
+  },
+  "workspaces": ["apps/*", "packages/*"]
+}

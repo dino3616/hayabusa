@@ -1,0 +1,28 @@
+ARG PORT
+ARG TURBO_TEAM
+ARG TURBO_TOKEN
+
+FROM oven/bun:1.0.30 AS builder
+ENV TURBO_TEAM=${TURBO_TEAM}
+ENV TURBO_TOKEN=${TURBO_TOKEN}
+
+WORKDIR /hayabusa/
+
+COPY ./ ./
+RUN bun install --frozen-lockfile
+# hadolint ignore=DL3059
+RUN bun turbo --filter='@hayabusa/api' build
+
+FROM oven/bun:1.0.30-distroless AS runner
+ENV NODE_ENV=production
+
+WORKDIR /hayabusa/
+
+COPY --chown=nonroot:nonroot --from=builder /hayabusa/node_modules/ ./node_modules/
+COPY --chown=nonroot:nonroot --from=builder /hayabusa/apps/api/dist/ ./apps/api/dist/
+
+WORKDIR /hayabusa/apps/api/
+
+USER nonroot
+EXPOSE ${PORT}
+ENTRYPOINT ["./dist/main.js"]

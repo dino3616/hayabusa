@@ -1,0 +1,47 @@
+{
+  "name": "@hayabusa/catalog",
+  "version": "0.1.0",
+  "repository": "https://github.com/dino3616/hayabusa.git",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "module": "nodenext",
+  "scripts": {
+    "generate": "panda codegen && panda cssgen",
+    "dev": "bun sb",
+    "build": "bun sb:build",
+    "fmt": "biome format .",
+    "fmt:fix": "biome format --write",
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --apply",
+    "test": "bun test",
+    "sb": "storybook dev --port 6006",
+    "sb:build": "storybook build -o ./.storybook/static",
+    "chromatic": "bunx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN"
+  },
+  "dependencies": {
+    "@hayabusa/core": "workspace:*",
+    "@hayabusa/design-token": "workspace:*",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "1.2.19",
+    "@hayabusa/pandacss": "workspace:*",
+    "@hayabusa/postcss": "workspace:*",
+    "@hayabusa/tsconfig": "workspace:*",
+    "@hayabusa/ui": "workspace:*",
+    "@hayabusa/website": "workspace:*",
+    "@storybook/addon-a11y": "8.0.0",
+    "@storybook/addon-essentials": "8.0.0",
+    "@storybook/addon-styling": "1.3.7",
+    "@storybook/addon-viewport": "8.0.0",
+    "@storybook/addons": "7.6.17",
+    "@storybook/nextjs": "8.0.0",
+    "@storybook/react": "8.0.0",
+    "@types/react": "18.2.65",
+    "@types/react-dom": "18.2.22",
+    "chromatic": "11.0.8",
+    "storybook": "8.0.0"
+  }
+}
