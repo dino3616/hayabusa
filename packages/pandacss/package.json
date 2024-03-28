@@ -21,7 +21,7 @@
   "devDependencies": {
     "@hayabusa/tsconfig": "workspace:*",
     "@hayabusa/type": "workspace:*",
-    "@pandacss/dev": "0.34.3",
-    "@pandacss/studio": "0.34.3"
+    "@pandacss/dev": "0.36.1",
+    "@pandacss/studio": "0.36.1"
   }
 }
