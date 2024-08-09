@@ -30,7 +30,7 @@
     "supabase": "1.148.6",
     "ts-node": "10.9.2",
     "ts-patch": "3.1.2",
-    "turbo": "1.12.5",
+    "turbo": "2.0.12",
     "typescript": "5.4.2"
   },
   "overrides": {
