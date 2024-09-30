@@ -63,7 +63,7 @@
   "devDependencies": {
     "@hayabusa/tsconfig": "workspace:*",
     "@hayabusa/type": "workspace:*",
-    "@nestia/sdk": "2.5.15",
+    "@nestia/sdk": "3.17.0",
     "@nestjs/schematics": "10.1.1",
     "@types/graphql-validation-complexity": "0.4.4",
     "@types/pg": "8.11.2",
