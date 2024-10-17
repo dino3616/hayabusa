@@ -12,10 +12,10 @@
     "test": "bun test"
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "5.0.2",
+    "@graphql-codegen/cli": "5.0.3",
     "@graphql-codegen/introspection": "4.0.3",
-    "@graphql-codegen/typescript": "4.0.6",
-    "@graphql-codegen/typescript-operations": "4.2.0",
+    "@graphql-codegen/typescript": "4.1.0",
+    "@graphql-codegen/typescript-operations": "4.3.0",
     "@graphql-codegen/typescript-urql": "4.0.0",
     "@graphql-codegen/urql-introspection": "3.0.0",
     "@hayabusa/tsconfig": "workspace:*",
