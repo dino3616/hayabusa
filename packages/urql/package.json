@@ -12,7 +12,7 @@
     "test": "bun test"
   },
   "dependencies": {
-    "@urql/core": "4.3.0",
+    "@urql/core": "5.0.8",
     "@urql/devtools": "2.0.3",
     "@urql/exchange-auth": "2.1.6",
     "@urql/next": "1.1.1",
