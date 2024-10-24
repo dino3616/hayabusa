@@ -2,7 +2,7 @@ ARG PORT
 ARG TURBO_TEAM
 ARG TURBO_TOKEN
 
-FROM oven/bun:1.0.30 AS builder
+FROM oven/bun:1.1.32 AS builder
 ENV TURBO_TEAM=${TURBO_TEAM}
 ENV TURBO_TOKEN=${TURBO_TOKEN}
 
@@ -13,7 +13,7 @@ RUN bun install --frozen-lockfile
 # hadolint ignore=DL3059
 RUN bun turbo --filter='@hayabusa/api' build
 
-FROM oven/bun:1.0.30-distroless AS runner
+FROM oven/bun:1.1.32-distroless AS runner
 ENV NODE_ENV=production
 
 WORKDIR /hayabusa/
