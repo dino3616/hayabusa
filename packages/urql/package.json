@@ -14,11 +14,11 @@
   "dependencies": {
     "@urql/core": "4.3.0",
     "@urql/devtools": "2.0.3",
-    "@urql/exchange-auth": "2.1.6",
-    "@urql/next": "1.1.1",
-    "date-fns": "3.4.0",
-    "graphql": "16.8.1",
-    "graphql-ws": "5.15.0"
+    "@urql/exchange-auth": "2.2.0",
+    "@urql/next": "1.1.2",
+    "date-fns": "3.6.0",
+    "graphql": "16.9.0",
+    "graphql-ws": "5.16.0"
   },
   "devDependencies": {
     "@hayabusa/tsconfig": "workspace:*",

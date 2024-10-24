@@ -16,12 +16,12 @@
   },
   "dependencies": {
     "@hayabusa/design-token": "workspace:*",
-    "zod": "3.22.4"
+    "zod": "3.23.8"
   },
   "devDependencies": {
     "@hayabusa/tsconfig": "workspace:*",
     "@hayabusa/type": "workspace:*",
-    "@pandacss/dev": "0.34.3",
-    "@pandacss/studio": "0.34.3"
+    "@pandacss/dev": "0.47.0",
+    "@pandacss/studio": "0.47.0"
   }
 }

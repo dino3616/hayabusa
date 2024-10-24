@@ -15,9 +15,9 @@
   },
   "dependencies": {
     "gql-tag": "1.0.1",
-    "graphql": "16.8.1"
+    "graphql": "16.9.0"
   },
   "devDependencies": {
-    "@apollo/rover": "0.22.0"
+    "@apollo/rover": "0.26.2"
   }
 }
