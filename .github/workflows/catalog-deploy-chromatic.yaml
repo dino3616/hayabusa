@@ -60,7 +60,7 @@ jobs:
         run: bun turbo run generate
 
       - name: publish storybook
-        uses: chromaui/action@v11
+        uses: chromaui/action@v13
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
