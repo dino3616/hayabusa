@@ -20,7 +20,7 @@ jobs:
       db: ${{ steps.changes.outputs.db }}
     steps:
       - name: checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: check for file changes
         uses: dorny/paths-filter@v3
@@ -40,7 +40,7 @@ jobs:
     if: needs.filter.outputs.db == 'true'
     steps:
       - name: checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: setup supabase cli
         uses: supabase/setup-cli@v1
