@@ -19,7 +19,7 @@ jobs:
       graphql: ${{ steps.changes.outputs.graphql }}
     steps:
       - name: checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: check for file changes
         uses: dorny/paths-filter@v3
@@ -36,7 +36,7 @@ jobs:
     if: needs.filter.outputs.graphql == 'true'
     steps:
       - name: checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: setup bun
         uses: oven-sh/setup-bun@v1

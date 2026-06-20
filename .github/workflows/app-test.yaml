@@ -16,7 +16,7 @@ jobs:
       app: ${{ steps.changes.outputs.app }}
     steps:
       - name: checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: check for file changes
         uses: dorny/paths-filter@v3
@@ -30,7 +30,7 @@ jobs:
     needs: filter
     steps:
       - name: checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: setup bun
         uses: oven-sh/setup-bun@v1
