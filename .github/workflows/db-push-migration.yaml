@@ -57,7 +57,7 @@ jobs:
         run: echo "STORE_PATH=$(bun pm cache)" >> $GITHUB_OUTPUT
 
       - name: cache bun dependencies
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ${{ steps.get-bun-cache-directory.outputs.STORE_PATH }}
           key: ${{ runner.os }}-bun-dependencies-${{ hashFiles('**/bun.lockb') }}
