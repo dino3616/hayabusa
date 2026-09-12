@@ -21,7 +21,7 @@
     "urql": "bun --cwd ./packages/urql"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.6.1",
+    "@biomejs/biome": "2.5.13",
     "@types/bun": "1.0.8",
     "cross-env": "7.0.3",
     "dotenv-cli": "7.4.1",
