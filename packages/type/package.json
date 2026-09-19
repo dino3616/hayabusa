@@ -14,6 +14,6 @@
   },
   "devDependencies": {
     "@hayabusa/tsconfig": "workspace:*",
-    "ts-essentials": "9.4.1"
+    "ts-essentials": "9.4.2"
   }
 }
