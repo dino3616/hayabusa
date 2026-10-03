@@ -21,20 +21,20 @@
     "urql": "bun --cwd ./packages/urql"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.6.1",
-    "@types/bun": "1.0.8",
+    "@biomejs/biome": "1.9.4",
+    "@types/bun": "1.4.2",
     "cross-env": "7.0.3",
-    "dotenv-cli": "7.4.1",
-    "lefthook": "1.6.6",
-    "rimraf": "5.0.5",
-    "supabase": "1.148.6",
+    "dotenv-cli": "7.4.4",
+    "lefthook": "1.13.6",
+    "rimraf": "5.0.10",
+    "supabase": "1.226.4",
     "ts-node": "10.9.2",
-    "ts-patch": "3.1.2",
-    "turbo": "1.12.5",
-    "typescript": "5.4.2"
+    "ts-patch": "3.3.0",
+    "turbo": "1.13.4",
+    "typescript": "5.9.3"
   },
   "overrides": {
-    "@langchain/core": "0.1.46"
+    "@langchain/core": "0.3.80"
   },
   "workspaces": ["apps/*", "packages/*"]
 }
